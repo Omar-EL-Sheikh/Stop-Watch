@@ -1,0 +1,185 @@
+/*
+ * Mini_Project_2.c
+ *
+ *  Created on: Sep 18, 2022
+*   Author: Omar M. EL-Sheikh
+ */
+
+/* Pre-processing */
+#include <avr/io.h>
+#include <avr/interrupt.h>
+
+/* MACROS */
+#define MAX_SECONDS_COUNT 359999  /*Maximum seconds count that can be displayed on the 6 7-segments which is
+ 	 	 	 	 	 	 	 	 	equivalent to (99 : 59 : 59)  */
+/* Global Variables */
+unsigned long totalSecsCount = 0, tempSecsCount; // Variables to store total seconds count
+unsigned char secs = 0, mins = 0, hrs = 0, sec1 = 0, sec2 = 0, min1 = 0, min2 = 0, hr1 = 0, hr2 = 0;/*
+Variables to store each value to be displayed on the 6 7-segments */
+
+/*Functions Definitions*/
+void Timer1_CTC_Mode_INIT()
+{
+	TCCR1B = (1<<CS11) | (1<<CS10) | (1<<WGM12); // Setting Timer1 to CTC mode with a pre-scalar 64
+	TCNT1 = 0; // Clearing counter register to begin counting from 0
+	OCR1A = 15624; // Setting the compare register to this specific value to make an interrupt every second
+	TIMSK = (1<<OCIE1A); // Output Compare A Match Interrupt Enable
+	sei(); // Global interrupt bit enable
+} // Function to initialize Timer1 CTC Mode (Interrupt Technique)
+
+void INT0_INIT(void){
+	sei(); // Global interrupt bit enable
+	MCUCR |= (1<<ISC01); // INT0 falling edge mode set
+	GICR |= (1<<INT0); // INT0 interrupt enable
+} // Function to initialize external interrupt INT0 with falling edge
+
+void INT1_INIT(){
+	sei(); // Global interrupt bit enable
+	MCUCR |= (1<<ISC11) | (1<<ISC10); // INT1 rising edge mode set
+	GICR |= (1<<INT1); // INT1 interrupt enable
+} // Function to initialize external interrupt INT1 with rising edge
+
+void INT2_INIT(){
+	sei(); // Global interrupt bit enable
+	MCUCSR |= (1<<ISC2);     // INT2 falling edge mode set
+	GICR   |= (1<<INT2);	 // INT2 interrupt enable
+} // Function to initialize external interrupt INT2 with falling edge
+
+void TimeDisplay(void){
+	if (totalSecsCount != 0){
+		PORTA &= ~(1<<PA6);
+	} // Activating the first dot
+	PORTC &= (0XF0) | sec1; // Changing the value of the first 4 bits of PORTC to be sent to the decoder 7447
+	PORTC |= sec1; // Changing the value of the first 4 bits of PORTC to be sent to the decoder 7447
+	PORTA |= (1<<PA0); // Enabling 7-segment #1 to display the ones of seconds
+	PORTA &= (0XC0); // Clearing first 6 bits of PORTA
+
+	if (totalSecsCount>9){
+		PORTA &= ~(1<<PA6);
+	} // Activating the second dot
+	else {
+		PORTA |= (1<<PA6);
+	}
+	PORTC &= (0XF0);
+	PORTC |= sec2;
+	PORTA |= (1<<PA1); // Enabling 7-segment #2 to display the tens of seconds
+	PORTA &= (0XC0);
+
+	if (totalSecsCount > 59){
+		PORTA &= ~(1<<PA6);
+	} // Activating the third dot
+	else {
+		PORTA |= (1<<PA6);
+	}
+	PORTC &= (0XF0);
+	PORTC |= min1; // Enabling 7-segment #3 to display the ones of minutes
+	PORTA |= (1<<PA2);
+	PORTA &= (0XC0);
+
+	if (totalSecsCount > 599){
+		PORTA &= ~(1<<PA6);
+	}  // Activating the fourth dot
+	else {
+		PORTA |= (1<<PA6);
+	}
+	PORTC &= (0XF0);
+	PORTC |= min2; // Enabling 7-segment #4 to display the tens of minutes
+	PORTA |= (1<<PA3);
+	PORTA &= (0XC0);
+
+	if (totalSecsCount > 3599){
+		PORTA &= ~(1<<PA6);
+	} // Activating the fifth dot
+	else {
+		PORTA |= (1<<PA6);
+	}
+	PORTC &= (0XF0);
+	PORTC |= hr1;
+	PORTA |= (1<<PA4); // Enabling 7-segment #5 to display the ones of hours
+	PORTA &= (0XC0);
+
+	if (totalSecsCount > 35999){
+		PORTA &= ~(1<<PA6);
+	} // Activating the sixth dot
+	else {
+		PORTA |= (1<<PA6);
+	}
+	PORTC &= (0XF0);
+	PORTC |= hr2;
+	PORTA |= (1<<PA5); // Enabling 7-segment #6 to display the tens of hours
+	PORTA &= (0XC0);
+} // Function to display the time on the 6 7-segments
+
+void Pins_INIT (void){
+	DDRD &= ~(1<<PD2);
+	DDRD &= ~(1<<PD3);
+	DDRB &= (~(1<<PB2));
+	PORTD |= (1<<PD2);
+	PORTD &= ~(1<<PD3);
+	PORTB &= ~(1<<PB2);
+
+	DDRC |= 0X0F;
+
+	DDRA |= 0X7F;
+	PORTA |= (1<<PA6); // Dot off
+	/*For every 7-segment the dot will be activated if the 7-segment starts to count time*/
+}
+
+int main(void){
+	Timer1_CTC_Mode_INIT();
+	INT0_INIT();
+	INT1_INIT();
+	INT2_INIT();
+	Pins_INIT();
+
+	while(1) {
+		TimeDisplay();
+	}
+}
+
+ISR(TIMER1_COMPA_vect)
+{
+	totalSecsCount++; // Incrementing total seconds count by 1
+	if (totalSecsCount > MAX_SECONDS_COUNT){
+		totalSecsCount = 0;
+	} /* If the seconds count exceeded the max value that can be displayed, an overflow should occur */
+
+	tempSecsCount = totalSecsCount; // Temp to store total seconds count to prevent changing its actual value
+
+	hrs = tempSecsCount / (60*60); // Converting seconds to hours
+	tempSecsCount = tempSecsCount % (60*60);
+	hr2 = hrs / 10; // Calculating tens of hours
+	hr1 = hrs % 10; // Calculating ones of hours
+
+	mins = tempSecsCount / (60);
+	tempSecsCount = tempSecsCount % (60); // Converting the remaining seconds to minutes
+	min2 = mins / 10; //Calculating tens of minutes
+	min1 = mins % 10; // Calculating ones of minutes
+
+	secs = tempSecsCount; // Storing the remaining seconds
+	sec2 = secs / 10; // Calculating the tens of seconds
+	sec1 = secs % 10; // Calculating the ones of seconds
+} // ISR to update current time count whenever the timer makes an interrupt to indicate that a second has elapsed
+
+ISR (INT0_vect){
+	TCNT1=0; // Clearing counter register
+	/* Clearing all 7-segments display variables*/
+	totalSecsCount = 0;
+	sec1 = 0;
+	sec2 = 0;
+	min1 = 0;
+	min2 = 0;
+	hr1 = 0;
+	hr2 = 0;
+} // ISR to reset the timer whenever a falling edge is detected in PD2
+
+ISR (INT1_vect){
+	/*Clock select to stop counter*/
+	TCCR1B &= ~(1<<CS11);
+	TCCR1B &= ~(1<<CS10);
+} // ISR to stop the timer whenever a rising edge is detected in PD3
+
+ISR (INT2_vect){
+	/* Clock select to resume counter*/
+	TCCR1B = (1<<CS11) | (1 << CS10) | (1<<WGM12);
+} // ISR to resume the timer whenever a falling edge is detected in PB2

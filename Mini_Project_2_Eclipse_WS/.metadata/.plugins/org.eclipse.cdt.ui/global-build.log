@@ -1,0 +1,1003 @@
+19:43:36 **** Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:43:58 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:44:10 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:02:09 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:02:49 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:05:40 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:09:37 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:13:57 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1940 bytes (5.9% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:14:03 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1940 bytes (5.9% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:14:36 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2018 bytes (6.2% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:15:07 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:21:23 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2024 bytes (6.2% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:21:29 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2010 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:22:44 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2006 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:24:46 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2000 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:31:40 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:32:34 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:25:55 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:26:04 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:37:07 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:48:48 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8256 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:10:41 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8260 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:38:02 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8256 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:39:38 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8256 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:57:05 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2012 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:58:17 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8256 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:04:54 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8256 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:31:05 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8260 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:31:40 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8260 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:31:56 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8256 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:20:40 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Building file: ../Mini_Project_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Mini_Project_2.d" -MT"Mini_Project_2.o" -c -o "Mini_Project_2.o" "../Mini_Project_2.c"
+In file included from ../Mini_Project_2.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Mini_Project_2.c
+ 
+Building target: Mini_Project_2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Mini_Project_2.map -mmcu=atmega32 -o "Mini_Project_2.elf"  ./Mini_Project_2.o   
+Finished building target: Mini_Project_2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Mini_Project_2.elf  >"Mini_Project_2.lss"
+Finished building: Mini_Project_2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Mini_Project_2.elf  "Mini_Project_2.hex"
+Finished building: Mini_Project_2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8250 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:25:45 **** Incremental Build of configuration Debug for project Mini_Project_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Mini_Project_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8250 bytes (25.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
