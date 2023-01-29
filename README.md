@@ -1,4 +1,5 @@
 # Stop-Watch
+![Screenshot (516)](https://user-images.githubusercontent.com/79065694/215358284-c1c5d221-1f53-45c9-9ca8-ab8429359e68.png)
 Description:
 A stop-watch system that counts time in seconds with pause, resume and reset buttons using 
 ATmega32 microcontroller.
